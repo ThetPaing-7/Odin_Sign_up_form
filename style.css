@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --heading-font : 'ArimoRegular', serif;
+    --text-font: 'IsabellaSansRegular', serif;
+}
+
+body{
+    background: url(Brown\ Vintage\ Watercolor\ Creative\ Portfolio\ Presentation.png) no-repeat center/cover fixed ;
+}
+
+.rightSection{
+    width: max(700px,600px,40%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tagline{
+    font-family: var(--heading-font);
+    font-size: clamp(2rem,35px,10%);
+}
