@@ -13,6 +13,10 @@ body{
     background: url(Brown\ Vintage\ Watercolor\ Creative\ Portfolio\ Presentation.png) no-repeat center/cover fixed ;
 }
 
+.container{
+    display: flex;
+}
+
 .rightSection{
     width: max(700px,600px,40%);
     height: 100vh;
@@ -27,3 +31,119 @@ body{
     font-family: var(--heading-font);
     font-size: clamp(2rem,35px,10%);
 }
+
+.leftSection{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    height: 100vh;
+    width: calc(100vw - max(700px,600px,40%));
+    gap: 10px;
+
+}
+
+.leftSection h2{
+    margin-top: 200px;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+
+}
+
+.leftSection p{
+    font-size: var(--text-font);
+    font-size: 1.5rem;
+    
+    
+}
+
+.leftSection h2,p{
+    margin-left: 3rem;
+    text-shadow: 0px 0px 3px;
+    
+}
+
+.infomationContainer{
+    margin: 10px;
+    margin-left: 3rem;
+}
+
+.infomationContainer h4{
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+
+#informationForm{
+    display: flex;
+    margin: 30px 0;
+    gap: 5rem;
+}
+
+.infoLeftside > div,
+.infoRightside > div{
+    margin: 15px;
+}
+
+.infoLeftside > div > div,
+.infoRightside > div > div{
+    font-family: var(--text-font);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.infoLeftside input,
+.infoRightside input{
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.948);
+    border:none;
+    padding: 5px;
+}
+
+input:invalid{
+    background-color: ivory;
+    border: none;
+    outline: 1px solid red;
+    border-radius: 5px;
+
+}
+
+input:invalid::placeholder{
+    font-weight: bold;
+}
+
+input:valid{
+    background-color: ivory;
+    border: none;
+    outline: 1px solid rgb(113, 205, 153);
+    border-radius: 5px;
+
+}
+
+button{
+    margin-left: 1rem;
+    width: 120px;
+    height: 40px;
+    background-color: beige;
+    color: black;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    border: none;
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
+button:hover,
+button:active{
+    background-color: rgb(231, 231, 123);
+    color: brown;
+    cursor: pointer;
+}
+
+
+
+   
+    
+
+
